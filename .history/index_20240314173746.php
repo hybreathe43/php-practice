@@ -266,7 +266,7 @@
   // $to = (new DateTime())->add(new DateInterval('P1M'));
   // echo $from->format('m/d/Y') . $from->format('m/d/Y');
   //Period
-  $period = new DatePeriod(new DateTime('04/04/2020'), new DateInterval('P1D'), (new DateTime('04/28/2020'))->modify('+1 day'));
+  $period = new DatePeriod(new DateTime('04/04/2020'), new DateInterval('P1D'), (new DateTime('04/28/2020'))->modify('+1 days'));
   foreach ($period as $date) {
     echo $date->format('m/d/Y');
   }

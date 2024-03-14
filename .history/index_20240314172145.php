@@ -260,17 +260,12 @@
   // $Int = new DateInterval('P3M2D');
   // $res = $d1->add($Int);
   // $res = $d1->diff($d2);
-  // var_dump(($res));
 
-  // $from = new DateTime();
-  // $to = (new DateTime())->add(new DateInterval('P1M'));
-  // echo $from->format('m/d/Y') . $from->format('m/d/Y');
-  //Period
-  $period = new DatePeriod(new DateTime('04/04/2020'), new DateInterval('P1D'), (new DateTime('04/28/2020'))->modify('+1 day'));
-  foreach ($period as $date) {
-    echo $date->format('m/d/Y');
-  }
+$from =new DateTime();
+$to = new DateTime()->add(new );
 
+
+  var_dump(($res));
   ?>
   <!-- short hand of echo  -->
   <!-- <?= "<p style='color:red';>Hello {$name}</p>"; ?>

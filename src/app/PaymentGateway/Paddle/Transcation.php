@@ -40,8 +40,26 @@ class Transcation
 // {
 //     return "hello";
 // }
-private $name="asasas";
-private $sahil="asa";
-private $mubeen="asasas sa";
+// private $name="asasas";
+// private $sahil="asa";
+// private $mubeen="asasas sa";
+
+// protected string $name="CalssA";
+// public function getName(){
+//     return $this->name;
+// }
+//self
+// protected static string $name="CalssA";
+// public static function getName(){
+//     return static::$name;
+//     // return self::$name;
+// }
+public function __construct(public float $val){
+    if($val <=0){
+        // throw new \Exception;
+        throw new \Exception('Value should be greater then 0');
+    }
+var_dump($val);
+}
 
 }

@@ -251,25 +251,10 @@
   // $date = new DateTime('04/04/2020', new DateTimeZone("Europe/Amsterdam"));
   //second method
   // $date = new DateTime('04/04/2020');
-  // $date = DateTime::createFromFormat('d/m/Y','04/04/2020');
-  // $date->setTimezone(new DateTimeZone("Europe/Amsterdam"));
-  // var_dump($date);
+  $date = DateTime::createFromFormat(''',04/04/2020');
+  $date->setTimezone(new DateTimeZone("Europe/Amsterdam"));
 
-  // $d1 = new DateTime('05/25/2020');
-  // $d2 = new DateTime('05/15/2020');
-  // $Int = new DateInterval('P3M2D');
-  // $res = $d1->add($Int);
-  // $res = $d1->diff($d2);
-  // var_dump(($res));
-
-  // $from = new DateTime();
-  // $to = (new DateTime())->add(new DateInterval('P1M'));
-  // echo $from->format('m/d/Y') . $from->format('m/d/Y');
-  //Period
-  $period = new DatePeriod(new DateTime('04/04/2020'), new DateInterval('P1D'), (new DateTime('04/28/2020'))->modify('+1 day'));
-  foreach ($period as $date) {
-    echo $date->format('m/d/Y');
-  }
+  var_dump($date);
 
   ?>
   <!-- short hand of echo  -->

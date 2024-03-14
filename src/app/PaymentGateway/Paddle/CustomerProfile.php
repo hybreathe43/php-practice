@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\PaymentGateway\Paddle;
 
-class CustomerProfile
+class CustomerProfile extends Transcation
 {
-    
+  protected static string $name="class b";  
 }
